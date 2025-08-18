@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>St. Mary’s University – SMRU</title>
+    <meta
+      name="description"
+      content="Discover SMRU – India's pioneering private university for rehabilitation sciences offering BPT, BOT, BPO, Audiology, Psychology, and more with 100% clinical exposure."
+    />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Speed up and stabilize NPF loads -->
+    <link rel="preconnect" href="https://cdn.npfs.co" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.npfs.co">
+    <link rel="preconnect" href="https://widgets.in4.nopaperforms.com" crossorigin>
+    <link rel="dns-prefetch" href="https://widgets.in4.nopaperforms.com">
+
+    <!-- Popup button styles + hide vendor button -->
+    <style>
+      .npfWidgetButton {
+        position: fixed !important;
+        right: -50px !important;
+        top: 50% !important;
+        transform: rotate(270deg) !important;
+        background-color: #17a43b !important;
+        z-index: 999999;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.33;
+        padding: 8px 18px;
+        border: 0;
+        cursor: pointer;
+      }
+      .npfWidget-1724ed5dcfaa2cb0aabd46c4d9c7d8df.npfWidgetButton {
+        right: -52px !important;
+        background-color: #038137 !important;
+      }
+      .npfTitle-1724ed5dcfaa2cb0aabd46c4d9c7d8df { font-size: 20px; text-align: center; color: #000; }
+      div#popup-1724ed5dcfaa2cb0aabd46c4d9c7d8df { z-index: 99999; }
+      @media (max-width: 768px) {
+        .npfWidget-1724ed5dcfaa2cb0aabd46c4d9c7d8df.npfWidgetButton { right: -52px; z-index: 99999; }
+      }
+      /* Keep button in DOM but hide visually */
+      .npfWidgetButton.npfWidget-1724ed5dcfaa2cb0aabd46c4d9c7d8df {
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Meritto Dynamic Tracking Code -->
+    <script type="text/javascript">
+      (function () {
+        var npf_d = "https://admissions.smru.in";
+        var npf_c = "6772";
+        var npf_m = "1";
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://track.nopaperforms.com/js/track.js";
+        document.body.appendChild(s);
+      })();
+    </script>
+
+    <!-- React root -->
+    <div id="root"></div>
+
+    <!-- Vite entry -->
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Meritto embed loader (INLINE widget support) -->
+    <script id="npfWidgetLoader" type="text/javascript">
+      (function () {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://widgets.in4.nopaperforms.com/emwgts.js";
+        s.onload = function () {
+          if (window.npf && typeof window.npf.init === "function") {
+            try { window.npf.init(); } catch (e) {}
+          }
+        };
+        document.body.appendChild(s);
+      })();
+    </script>
+
+    <!-- Hidden vendor popup button (kept) -->
+    <button type="button" class="npfWidgetButton npfWidget-1724ed5dcfaa2cb0aabd46c4d9c7d8df">Enquire Now!</button>
+
+    <!-- POPUP widget script + async init (kept) -->
+    <script>
+      window.npfAsyncInit = function () {
+        try {
+          new NpfWidgetsInit({
+            widgetId: "1724ed5dcfaa2cb0aabd46c4d9c7d8df",
+            baseurl: "widgets.in4.nopaperforms.com",
+            formTitle: "Enquiry Form",
+            titleColor: "#17a43b",
+            backgroundColor: "#ddd",
+            iframeHeight: "480px",
+            buttonbgColor: "#4c79dc",
+            buttonTextColor: "#FFF"
+          });
+        } catch (e) {}
+      };
+    </script>
+    <script>
+      (function () {
+        var s = document.createElement("script");
+        s.src = "https://in4cdn.npfs.co/js/widget/npfwpopup.js";
+        s.async = true;
+        s.onload = function () {
+          if (typeof NpfWidgetsInit === "function") {
+            try {
+              new NpfWidgetsInit({
+                widgetId: "1724ed5dcfaa2cb0aabd46c4d9c7d8df",
+                baseurl: "widgets.in4.nopaperforms.com",
+                formTitle: "Enquiry Form",
+                titleColor: "#17a43b",
+                backgroundColor: "#ddd",
+                iframeHeight: "480px",
+                buttonbgColor: "#4c79dc",
+                buttonTextColor: "#FFF"
+              });
+            } catch (e) {}
+          }
+        };
+        document.body.appendChild(s);
+      })();
+    </script>
+  </body>
+</html>

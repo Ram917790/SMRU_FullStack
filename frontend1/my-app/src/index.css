@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-poppins bg-lightGray text-darkGray m-0 leading-relaxed overflow-x-hidden w-full;
+  }
+}
+/* hide scrollbars for the carousel (keeps swipe/scroll) */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
