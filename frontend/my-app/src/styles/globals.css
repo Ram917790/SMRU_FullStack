@@ -1,0 +1,77 @@
+@tailwind components;
+@tailwind utilities;
+
+/* =====================
+   Reusable Layout Helpers
+   ===================== */
+@layer components {
+  .smru-section {
+    @apply mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8;
+  }
+  .smru-block {
+    @apply py-12 md:py-16;
+  }
+  .smru-title {
+    @apply text-3xl md:text-4xl font-extrabold text-navy text-center;
+  }
+  .smru-sub {
+    @apply mt-2 text-base md:text-lg text-gray600b text-center;
+  }
+}
+
+/* =====================
+   Hero Section
+   ===================== */
+@layer components {
+  .smru-hero {
+    @apply bg-gradient-to-r from-aboutBanner to-aboutBannerGreen text-white text-center py-16 md:py-20 px-6 shadow-hero;
+  }
+  .smru-hero h1 {
+    @apply text-[2rem] md:text-[2.6rem] font-extrabold tracking-tight text-accent;
+  }
+  .smru-hero p {
+    @apply mt-4 text-white/90 max-w-3xl mx-auto text-base md:text-lg;
+  }
+}
+
+/* =====================
+   Generic Card
+   ===================== */
+@layer components {
+  .smru-card {
+    @apply bg-white rounded-[12px] shadow-md border border-gray-200;
+  }
+}
+
+/* =====================
+   Buttons
+   ===================== */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-accent text-white font-semibold hover:bg-accentDark transition-colors duration-200;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white text-accent font-semibold border border-accent hover:bg-accent/10 transition-colors duration-200;
+  }
+}
+
+/* =====================
+   Forms
+   ===================== */
+@layer components {
+  .form-input {
+    @apply w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent;
+  }
+  .form-label {
+    @apply block text-sm font-medium text-darkGray mb-1;
+  }
+}
+
+/* =====================
+   Utility Overrides
+   ===================== */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
