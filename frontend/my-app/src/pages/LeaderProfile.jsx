@@ -19,6 +19,9 @@ export default function LeaderProfile() {
         match = (g.leaders || []).find(l => (l.slug || "").toLowerCase() === slug.toLowerCase());
         if (match) break;
       }
+      if (match) {
+        console.log("Leader found:", match.name, "Image URL:", match.profile_image);
+      }
       setLeader(match || null);
     } catch {
       setErr(true);
@@ -54,12 +57,22 @@ export default function LeaderProfile() {
                   src={leader.profile_image}
                   alt={`${leader.name} profile`}
                   className="w-full max-w-sm mx-auto aspect-[3/4] object-cover rounded-xl border-2 border-slate-200 shadow-lg"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                    e.currentTarget.nextElementSibling.style.display = 'flex';
+                  }}
+                  onLoad={(e) => {
+                    e.currentTarget.style.display = 'block';
+                    e.currentTarget.nextElementSibling.style.display = 'none';
+                  }}
                 />
-              ) : (
-                <div className="w-full max-w-sm mx-auto aspect-[3/4] border-2 border-slate-200 shadow-lg bg-slate-100 rounded-xl flex items-center justify-center text-4xl font-bold text-slate-600">
-                  {leader.name ? leader.name.split(' ').map(n => n[0]).join('').toUpperCase() : 'L'}
-                </div>
-              )}
+              ) : null}
+              <div 
+                className="w-full max-w-sm mx-auto aspect-[3/4] border-2 border-slate-200 shadow-lg bg-slate-100 rounded-xl flex items-center justify-center text-4xl font-bold text-slate-600"
+                style={{ display: leader.profile_image ? 'none' : 'flex' }}
+              >
+                {leader.name ? leader.name.split(' ').map(n => n[0]).join('').toUpperCase() : 'L'}
+              </div>
             </div>
 
             {/* Quick Facts */}
