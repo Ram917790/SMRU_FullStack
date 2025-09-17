@@ -1,5 +1,5 @@
 # 📚 Complete Deployment Documentation
-## SMRU Website (smru.in & smru.edu.in)
+## St. Mary's Rehabilitation University Website (smru.in & smru.edu.in)
 
 ---
 
@@ -177,5 +177,5 @@ If you've successfully deployed your SMRU website, you now have:
 
 ---
 
-*This documentation was created specifically for deploying the SMRU website. Keep these guides handy for future updates and maintenance.*
+*This documentation was created specifically for deploying the St. Mary's Rehabilitation University website. Keep these guides handy for future updates and maintenance.*
 

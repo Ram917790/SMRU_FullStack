@@ -6,7 +6,7 @@
 ## 🎯 **Project Overview**
 
 ### **Project Name:** SMRU Fullstack Application
-### **Organization:** Sri Manakula Vinayagar Medical University
+### **Organization:** St. Mary's Rehabilitation University
 ### **Purpose:** Official university website with content management system
 ### **Domains:** smru.in and smru.edu.in
 ### **Repository:** [https://github.com/Ram917790/SMRU_FullStack.git](https://github.com/Ram917790/SMRU_FullStack.git)
@@ -526,4 +526,4 @@ npm test
 
 ---
 
-*This documentation provides a comprehensive overview of the SMRU Fullstack Application. For specific implementation details, refer to the individual documentation files.*
+*This documentation provides a comprehensive overview of the SMRU Fullstack Application for St. Mary's Rehabilitation University. For specific implementation details, refer to the individual documentation files.*

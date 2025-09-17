@@ -1,5 +1,5 @@
 # 🏢 Hosting Provider Setup Guide
-## What to Ask Your Hosting Provider
+## St. Mary's Rehabilitation University Website Setup
 
 ---
 
@@ -371,5 +371,5 @@ After your hosting provider completes the setup:
 
 ---
 
-*This guide provides everything your hosting provider needs to deploy your SMRU website successfully.*
+*This guide provides everything your hosting provider needs to deploy your St. Mary's Rehabilitation University website successfully.*
 

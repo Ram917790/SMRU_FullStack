@@ -1,5 +1,5 @@
 # 🚀 Complete FileZilla Deployment Guide for Beginners
-## Deploying Your SMRU Website (smru.in & smru.edu.in)
+## Deploying Your St. Mary's Rehabilitation University Website (smru.in & smru.edu.in)
 
 ---
 
@@ -337,5 +337,5 @@ If you've followed this guide completely, your SMRU website should now be live a
 ---
 
 *Last updated: [Current Date]*
-*For SMRU Website Deployment*
+*For St. Mary's Rehabilitation University Website Deployment*
 

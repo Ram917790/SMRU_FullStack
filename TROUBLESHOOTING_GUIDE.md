@@ -1,5 +1,5 @@
 # 🔧 Complete Troubleshooting Guide
-## Fixing Common Deployment Issues
+## Fixing Common St. Mary's Rehabilitation University Website Issues
 
 ---
 

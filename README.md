@@ -1,5 +1,5 @@
 # 🏛️ SMRU Fullstack Application
-## Sri Manakula Vinayagar Medical University - Official Website
+## St. Mary's Rehabilitation University - Official Website
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/Ram917790/SMRU_FullStack.git)
 [![Django](https://img.shields.io/badge/Django-5.0.6-green)](https://djangoproject.com/)
@@ -9,7 +9,7 @@
 
 ## 📋 **Overview**
 
-The SMRU Fullstack Application is a comprehensive web platform for Sri Manakula Vinayagar Medical University, featuring a modern React frontend and a robust Django backend.
+The SMRU Fullstack Application is a comprehensive web platform for St. Mary's Rehabilitation University, featuring a modern React frontend and a robust Django backend.
 
 ### **Live Websites:**
 - **Primary Domain:** [smru.in](https://smru.in)
@@ -177,4 +177,4 @@ This project is licensed under the MIT License.
 
 *Last updated: January 2025*
 *Version: 1.0.0*
-*For SMRU - Sri Manakula Vinayagar Medical University*
+*For SMRU - St. Mary's Rehabilitation University*
