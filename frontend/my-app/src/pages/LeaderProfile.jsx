@@ -48,15 +48,15 @@ export default function LeaderProfile() {
         <div className="container max-w-screen-xl mx-auto px-4 grid lg:grid-cols-3 gap-8">
           <aside className="lg:col-span-1 space-y-6">
             {/* Profile Image */}
-            <div className="rounded-xl bg-white ring-1 ring-slate-300 p-8 text-center">
+            <div className="rounded-xl bg-white ring-1 ring-slate-300 p-6 text-center">
               {leader.profile_image ? (
                 <img
                   src={leader.profile_image}
                   alt={`${leader.name} profile`}
-                  className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-slate-200 shadow-lg"
+                  className="w-full max-w-sm mx-auto aspect-[3/4] object-cover rounded-xl border-2 border-slate-200 shadow-lg"
                 />
               ) : (
-                <div className="w-48 h-48 rounded-full mx-auto border-4 border-slate-200 shadow-lg bg-slate-100 flex items-center justify-center text-6xl font-bold text-slate-600">
+                <div className="w-full max-w-sm mx-auto aspect-[3/4] border-2 border-slate-200 shadow-lg bg-slate-100 rounded-xl flex items-center justify-center text-4xl font-bold text-slate-600">
                   {leader.name ? leader.name.split(' ').map(n => n[0]).join('').toUpperCase() : 'L'}
                 </div>
               )}
