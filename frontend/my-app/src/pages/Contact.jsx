@@ -90,8 +90,8 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <div className="flex gap-4 items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#0d315c] to-[#019e6e] rounded-lg flex items-center justify-center">
-                    <span className="text-white text-xl">📍</span>
+                  <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                    <span className="text-2xl">📍</span>
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#0d315c] mb-2">Our Address</h3>
@@ -105,8 +105,8 @@ const Contact = () => {
                 </div>
 
                 <div className="flex gap-4 items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#0d315c] to-[#019e6e] rounded-lg flex items-center justify-center">
-                    <span className="text-white text-xl">📞</span>
+                  <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                    <span className="text-2xl">📞</span>
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#0d315c] mb-2">Phone</h3>
@@ -125,8 +125,8 @@ const Contact = () => {
                 </div>
 
                 <div className="flex gap-4 items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#0d315c] to-[#019e6e] rounded-lg flex items-center justify-center">
-                    <span className="text-white text-xl">✉️</span>
+                  <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                    <span className="text-2xl">✉️</span>
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#0d315c] mb-2">Email</h3>
@@ -227,8 +227,8 @@ const Contact = () => {
                 {/* From Airport */}
                 <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                      <span className="text-white text-lg">✈️</span>
+                    <div className="w-10 h-10 flex items-center justify-center">
+                      <span className="text-2xl">✈️</span>
                     </div>
                     <h4 className="text-lg font-semibold text-[#0d315c]">From Airport</h4>
                   </div>
@@ -270,8 +270,8 @@ const Contact = () => {
                 {/* From Railway Station */}
                 <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center">
-                      <span className="text-white text-lg">🚂</span>
+                    <div className="w-10 h-10 flex items-center justify-center">
+                      <span className="text-2xl">🚂</span>
                     </div>
                     <h4 className="text-lg font-semibold text-[#0d315c]">From Railway Station</h4>
                   </div>
@@ -313,8 +313,8 @@ const Contact = () => {
                 {/* From Metro */}
                 <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center">
-                      <span className="text-white text-lg">🚇</span>
+                    <div className="w-10 h-10 flex items-center justify-center">
+                      <span className="text-2xl">🚇</span>
                     </div>
                     <h4 className="text-lg font-semibold text-[#0d315c]">From Metro</h4>
                   </div>
@@ -356,8 +356,8 @@ const Contact = () => {
                 {/* From Bus Stand */}
                 <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
-                      <span className="text-white text-lg">🚌</span>
+                    <div className="w-10 h-10 flex items-center justify-center">
+                      <span className="text-2xl">🚌</span>
                     </div>
                     <h4 className="text-lg font-semibold text-[#0d315c]">From Bus Stand</h4>
                   </div>
