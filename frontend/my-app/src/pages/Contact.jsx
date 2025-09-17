@@ -74,171 +74,328 @@ const Contact = () => {
 
       {/* CONTENT */}
       <section className="bg-gray-50 py-16">
-        <div className="max-w-6xl mx-auto px-4 grid gap-12 md:grid-cols-2">
-          {/* LEFT INFO (your copy) */}
-          <div>
-            <h2
-              className="text-3xl font-bold text-[#0d315c] mb-4"
-              data-reveal="fade-right"
-            >
-              Get in Touch
-            </h2>
-            <p
-              className="text-gray-700 mb-6"
-              data-reveal="fade-right"
-              style={{ "--delay": "0.08s" }}
-            >
-              We’re here to help you on your educational journey. Whether you
-              have questions about courses, admissions, or campus life, we’re
-              ready to assist.
-            </p>
+        <div className="max-w-7xl mx-auto px-4">
+          {/* TOP SECTION: Get in Touch + Enquiry Form */}
+          <div className="grid gap-8 lg:grid-cols-2 mb-12">
+            {/* LEFT: Get in Touch */}
+            <div className="bg-white rounded-xl shadow-lg p-8" data-reveal="fade-right">
+              <h2 className="text-3xl font-bold text-[#0d315c] mb-6">
+                Get in Touch
+              </h2>
+              <p className="text-gray-700 mb-8 text-lg leading-relaxed">
+                We're here to help you on your educational journey. Whether you
+                have questions about courses, admissions, or campus life, we're
+                ready to assist.
+              </p>
 
-            <ul className="space-y-4 mb-8">
-              <li className="flex gap-3 text-sm text-gray-800" data-reveal="fade-up">
-                <span className="text-lg">📍</span>
-                <div>
-                  <strong>Our Address</strong>
-                  <br />
-                  St. Mary's Rehabilitation University
-                  <br />
-                  Near Ramoji Film City,
-                  <br />
-                  Deshmukhi (V), Pochampally (M), Yadadri Bhongir (DT),
-                  <br />
-                  PIN: 508284
+              <div className="space-y-6">
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#0d315c] to-[#019e6e] rounded-lg flex items-center justify-center">
+                    <span className="text-white text-xl">📍</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-[#0d315c] mb-2">Our Address</h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      St. Mary's Rehabilitation University<br />
+                      Near Ramoji Film City,<br />
+                      Deshmukhi (V), Pochampally (M), Yadadri Bhongir (DT),<br />
+                      PIN: 508284
+                    </p>
+                  </div>
                 </div>
-              </li>
-              <li
-                className="flex gap-3 text-sm text-gray-800"
-                data-reveal="fade-up"
-                style={{ "--delay": "0.08s" }}
-              >
-                <span className="text-lg">📞</span>
-                <div>
-                  <strong>Phone</strong>
-                  <br />
-                  General:{" "}
-                  <a
-                    href="tel:+91-7331119430"
-                    className="text-[#0d315c] hover:underline"
-                  >
-                    +91-7331119430
-                  </a>
-                  <br />
-                  WhatsApp:{" "}
-                  <a
-                    href="tel:+91-7331119431"
-                    className="text-[#0d315c] hover:underline"
-                  >
-                    +91-7331119431
-                  </a>
-                  <br />
-                  Admissions:{" "}
-                  <a
-                    href="tel:+91-7331119432"
-                    className="text-[#0d315c] hover:underline"
-                  >
-                    +91-7331119432
-                  </a>
-                </div>
-              </li>
-              <li
-                className="flex gap-3 text-sm text-gray-800"
-                data-reveal="fade-up"
-                style={{ "--delay": "0.16s" }}
-              >
-                <span className="text-lg">✉️</span>
-                <div>
-                  <strong>Email</strong>
-                  <br />
-                  General:{" "}
-                  <a
-                    href="mailto:reach@smru.in"
-                    className="text-[#0d315c] hover:underline"
-                  >
-                    reach@smru.in
-                  </a>
-                </div>
-              </li>
-            </ul>
 
-            {/* Info cards */}
-            <div className="flex flex-wrap gap-6 mb-8">
-              <div
-                className="bg-white border border-gray-200 rounded-lg p-5 text-sm shadow-sm"
-                data-reveal="zoom-in"
-              >
-                <strong className="text-[#0d315c]">Office Hours</strong>
-                <br />
-                Mon - Sat: 9:30 AM - 5:00 PM
-                <br />
-                Sun: Closed
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#0d315c] to-[#019e6e] rounded-lg flex items-center justify-center">
+                    <span className="text-white text-xl">📞</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-[#0d315c] mb-2">Phone</h3>
+                    <div className="space-y-1">
+                      <p className="text-gray-700">
+                        General: <a href="tel:+91-7331119430" className="text-[#0d315c] hover:underline font-medium">+91-7331119430</a>
+                      </p>
+                      <p className="text-gray-700">
+                        WhatsApp: <a href="tel:+91-7331119431" className="text-[#0d315c] hover:underline font-medium">+91-7331119431</a>
+                      </p>
+                      <p className="text-gray-700">
+                        Admissions: <a href="tel:+91-7331119432" className="text-[#0d315c] hover:underline font-medium">+91-7331119432</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#0d315c] to-[#019e6e] rounded-lg flex items-center justify-center">
+                    <span className="text-white text-xl">✉️</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-[#0d315c] mb-2">Email</h3>
+                    <p className="text-gray-700">
+                      General: <a href="mailto:reach@smru.in" className="text-[#0d315c] hover:underline font-medium">reach@smru.in</a>
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div
-                className="bg-white border border-gray-200 rounded-lg p-5 text-sm shadow-sm"
-                data-reveal="zoom-in"
-                style={{ "--delay": "0.08s" }}
-              >
-                <strong className="text-[#0d315c]">Emergency Contact</strong>
-                <br />
-                Campus Security (24/7):
-                <br />
-                <a href="tel:+919010455590" className="text-[#0d315c] hover:underline">
-                  +91 90104-55590
+
+              {/* Info cards */}
+              <div className="grid gap-4 mt-8 md:grid-cols-2">
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-4">
+                  <h4 className="font-semibold text-[#0d315c] mb-2">Office Hours</h4>
+                  <p className="text-sm text-gray-700">
+                    Mon - Sat: 9:30 AM - 5:00 PM<br />
+                    Sun: Closed
+                  </p>
+                </div>
+                <div className="bg-gradient-to-br from-green-50 to-green-100 border border-green-200 rounded-lg p-4">
+                  <h4 className="font-semibold text-[#0d315c] mb-2">Emergency Contact</h4>
+                  <p className="text-sm text-gray-700">
+                    Campus Security (24/7):<br />
+                    <a href="tel:+919010455590" className="text-[#0d315c] hover:underline font-medium">+91 90104-55590</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* RIGHT: Enquiry Form */}
+            <div className="bg-white rounded-xl shadow-lg p-8" data-reveal="fade-left">
+              <h2 className="text-3xl font-bold text-[#0d315c] mb-2">Enquiry Form</h2>
+              <p className="text-gray-600 mb-6">
+                Fill the form and our team will reach out shortly.
+              </p>
+
+              {/* Official Meritto Form */}
+              <div className="w-full h-[620px] md:h-[640px]">
+                <div 
+                  className="npf_wgts w-full h-full rounded-lg border border-gray-200" 
+                  data-height="620px" 
+                  data-w="1724ed5dcfaa2cb0aabd46c4d9c7d8df"
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </div>
+
+              {/* Optional secondary popup trigger */}
+              <div className="mt-4">
+                <button
+                  onClick={openPopup}
+                  className="inline-flex items-center gap-2 rounded-lg px-4 py-2 bg-gradient-to-r from-[#0d315c] to-[#019e6e] text-white font-semibold hover:from-[#0a2a4a] hover:to-[#017a5a] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0d315c]/30"
+                >
+                  <i className="fa-solid fa-bolt"></i> Open Popup Form
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* BOTTOM SECTION: Map + How to Reach */}
+          <div className="grid gap-8 lg:grid-cols-2">
+            {/* LEFT: Map */}
+            <div data-reveal="fade-up">
+              <h3 className="text-2xl font-bold text-[#0d315c] mb-6">Campus Location</h3>
+              <div className="relative rounded-xl overflow-hidden shadow-lg group">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#e9f2ff] via-transparent to-[#f4fff8] pointer-events-none"></div>
+                <div className="h-[400px] w-full">
+                  <iframe
+                    title="SMRU Campus Location"
+                    loading="lazy"
+                    className="w-full h-full border-0"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    src={`https://www.google.com/maps?q=${encodeURIComponent("St. Mary's Rehabilitation University, Deshmukhi, Telangana 508284")}&output=embed`}
+                  ></iframe>
+                </div>
+                <div className="absolute left-4 bottom-4 px-3 py-1.5 bg-white/90 backdrop-blur rounded-md text-xs font-semibold text-[#0d315c] shadow">
+                  St. Mary's Group • Deshmukhi
+                </div>
+                <div className="absolute inset-0 ring-1 ring-black/5 rounded-xl pointer-events-none"></div>
+              </div>
+              <div className="mt-3">
+                <a 
+                  href="https://www.google.com/maps/place/Deshmukhi+SMRU" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center gap-2 text-[#0d315c] hover:underline font-medium"
+                >
+                  <span>Open in Google Maps</span>
+                  <i className="fa-solid fa-external-link-alt text-xs"></i>
                 </a>
               </div>
             </div>
 
-            {/* Map */}
-            <div
-              className="relative rounded-xl overflow-hidden shadow-lg group"
-              data-reveal="fade-up"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-[#e9f2ff] via-transparent to-[#f4fff8] pointer-events-none"></div>
-              <div className="h-[360px] md:h-[420px] w-full">
-                <iframe
-                  title="SMRU Campus Location"
-                  loading="lazy"
-                  className="w-full h-full border-0"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  src={`https://www.google.com/maps?q=${encodeURIComponent("St. Mary's Rehabilitation University, Deshmukhi, Telangana 508284")}&output=embed`}
-                ></iframe>
+            {/* RIGHT: How to Reach */}
+            <div data-reveal="fade-up" style={{ "--delay": "0.08s" }}>
+              <h3 className="text-2xl font-bold text-[#0d315c] mb-6">How to Reach SMRU</h3>
+              
+              <div className="space-y-4">
+                {/* From Airport */}
+                <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                      <span className="text-white text-lg">✈️</span>
+                    </div>
+                    <h4 className="text-lg font-semibold text-[#0d315c]">From Airport</h4>
+                  </div>
+                  <p className="text-sm text-gray-700 mb-3">
+                    <strong>Rajiv Gandhi International Airport (HYD)</strong><br/>
+                    Distance: ~45 km | Time: 1.5-2 hours
+                  </p>
+                  <p className="text-xs text-gray-600 mb-3">
+                    <strong>Route:</strong> Airport → Outer Ring Road → Yadadri Road → Deshmukhi
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <a
+                      href="https://www.uber.com/in/ride/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-black text-white text-xs rounded-lg hover:bg-gray-800 transition font-medium"
+                    >
+                      🚗 Uber
+                    </a>
+                    <a
+                      href="https://www.olacabs.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-yellow-500 text-white text-xs rounded-lg hover:bg-yellow-600 transition font-medium"
+                    >
+                      🚕 Ola
+                    </a>
+                    <a
+                      href="https://rapido.bike/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-red-500 text-white text-xs rounded-lg hover:bg-red-600 transition font-medium"
+                    >
+                      🏍️ Rapido
+                    </a>
+                  </div>
+                </div>
+
+                {/* From Railway Station */}
+                <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center">
+                      <span className="text-white text-lg">🚂</span>
+                    </div>
+                    <h4 className="text-lg font-semibold text-[#0d315c]">From Railway Station</h4>
+                  </div>
+                  <p className="text-sm text-gray-700 mb-3">
+                    <strong>Secunderabad Railway Station</strong><br/>
+                    Distance: ~35 km | Time: 1-1.5 hours
+                  </p>
+                  <p className="text-xs text-gray-600 mb-3">
+                    <strong>Route:</strong> Station → Secunderabad → Outer Ring Road → Yadadri Road → Deshmukhi
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <a
+                      href="https://www.uber.com/in/ride/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-black text-white text-xs rounded-lg hover:bg-gray-800 transition font-medium"
+                    >
+                      🚗 Uber
+                    </a>
+                    <a
+                      href="https://www.olacabs.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-yellow-500 text-white text-xs rounded-lg hover:bg-yellow-600 transition font-medium"
+                    >
+                      🚕 Ola
+                    </a>
+                    <a
+                      href="https://rapido.bike/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-red-500 text-white text-xs rounded-lg hover:bg-red-600 transition font-medium"
+                    >
+                      🏍️ Rapido
+                    </a>
+                  </div>
+                </div>
+
+                {/* From Metro */}
+                <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center">
+                      <span className="text-white text-lg">🚇</span>
+                    </div>
+                    <h4 className="text-lg font-semibold text-[#0d315c]">From Metro</h4>
+                  </div>
+                  <p className="text-sm text-gray-700 mb-3">
+                    <strong>Nearest Metro Station: Miyapur</strong><br/>
+                    Distance: ~25 km | Time: 45-60 minutes
+                  </p>
+                  <p className="text-xs text-gray-600 mb-3">
+                    <strong>Route:</strong> Miyapur Metro → NH44 → Yadadri Road → Deshmukhi
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <a
+                      href="https://www.uber.com/in/ride/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-black text-white text-xs rounded-lg hover:bg-gray-800 transition font-medium"
+                    >
+                      🚗 Uber
+                    </a>
+                    <a
+                      href="https://www.olacabs.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-yellow-500 text-white text-xs rounded-lg hover:bg-yellow-600 transition font-medium"
+                    >
+                      🚕 Ola
+                    </a>
+                    <a
+                      href="https://rapido.bike/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-red-500 text-white text-xs rounded-lg hover:bg-red-600 transition font-medium"
+                    >
+                      🏍️ Rapido
+                    </a>
+                  </div>
+                </div>
+
+                {/* From Bus Stand */}
+                <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
+                      <span className="text-white text-lg">🚌</span>
+                    </div>
+                    <h4 className="text-lg font-semibold text-[#0d315c]">From Bus Stand</h4>
+                  </div>
+                  <p className="text-sm text-gray-700 mb-3">
+                    <strong>MGBS (Mahatma Gandhi Bus Station)</strong><br/>
+                    Distance: ~40 km | Time: 1.5-2 hours
+                  </p>
+                  <p className="text-xs text-gray-600 mb-3">
+                    <strong>Route:</strong> MGBS → Secunderabad → Outer Ring Road → Yadadri Road → Deshmukhi
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <a
+                      href="https://www.uber.com/in/ride/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-black text-white text-xs rounded-lg hover:bg-gray-800 transition font-medium"
+                    >
+                      🚗 Uber
+                    </a>
+                    <a
+                      href="https://www.olacabs.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-yellow-500 text-white text-xs rounded-lg hover:bg-yellow-600 transition font-medium"
+                    >
+                      🚕 Ola
+                    </a>
+                    <a
+                      href="https://rapido.bike/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-red-500 text-white text-xs rounded-lg hover:bg-red-600 transition font-medium"
+                    >
+                      🏍️ Rapido
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div className="absolute left-4 bottom-4 px-3 py-1.5 bg-white/90 backdrop-blur rounded-md text-xs font-semibold text-[#0d315c] shadow">
-                St. Mary’s Group • Deshmukhi
-              </div>
-              <div className="absolute inset-0 ring-1 ring-black/5 rounded-xl pointer-events-none"></div>
-            </div>
-            <div className="mt-2 text-xs text-slate-600">
-              <a href="https://www.google.com/maps/place/Deshmukhi+SMRU" target="_blank" rel="noopener noreferrer" className="text-[#0d315c] hover:underline">Open in Google Maps</a>
-            </div>
-          </div>
-
-          {/* RIGHT FORM: exact NPF Enquiry Form shown INLINE */}
-          <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-[#0d315c]">Enquiry Form</h2>
-            <p className="mt-1 text-slate-600">
-              Fill the form and our team will reach out shortly.
-            </p>
-
-            {/* Official Meritto Form */}
-            <div className="w-full h-[620px] md:h-[640px] mt-4">
-              <div 
-                className="npf_wgts w-full h-full rounded-md" 
-                data-height="620px" 
-                data-w="1724ed5dcfaa2cb0aabd46c4d9c7d8df"
-                style={{ width: "100%", height: "100%" }}
-              />
-            </div>
-
-            {/* Optional secondary popup trigger under the inline form */}
-            <div className="mt-4">
-              <button
-                onClick={openPopup}
-                className="inline-flex items-center gap-2 rounded-lg px-4 py-2 bg-white ring-1 ring-slate-300 text-[#0d315c] font-semibold hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0d315c]/30"
-              >
-                <i className="fa-solid fa-bolt"></i> Open Popup Form
-              </button>
             </div>
           </div>
         </div>
