@@ -76,7 +76,7 @@ const Contact = () => {
       <section className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4">
           {/* TOP SECTION: Get in Touch + Enquiry Form */}
-          <div className="grid gap-8 lg:grid-cols-2 mb-12">
+          <div className="grid gap-8 xl:grid-cols-2 lg:grid-cols-1 mb-12">
             {/* LEFT: Get in Touch */}
             <div className="bg-white rounded-xl shadow-lg p-8" data-reveal="fade-right">
               <h2 className="text-3xl font-bold text-[#0d315c] mb-6">
@@ -138,7 +138,7 @@ const Contact = () => {
               </div>
 
               {/* Info cards */}
-              <div className="grid gap-4 mt-8 md:grid-cols-2">
+              <div className="grid gap-4 mt-8 sm:grid-cols-1 md:grid-cols-2">
                 <div className="bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-4">
                   <h4 className="font-semibold text-[#0d315c] mb-2">Office Hours</h4>
                   <p className="text-sm text-gray-700">
@@ -185,9 +185,9 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* BOTTOM SECTION: Map + How to Reach */}
-          <div className="grid gap-8 lg:grid-cols-2">
-            {/* LEFT: Map */}
+          {/* BOTTOM SECTION: Campus Location + How to Reach */}
+          <div className="space-y-12">
+            {/* Campus Location - Full Width */}
             <div data-reveal="fade-up">
               <h3 className="text-2xl font-bold text-[#0d315c] mb-6">Campus Location</h3>
               <div className="relative rounded-xl overflow-hidden shadow-lg group">
@@ -219,179 +219,179 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* RIGHT: How to Reach */}
+            {/* How to Reach SMRU - Full Width */}
             <div data-reveal="fade-up" style={{ "--delay": "0.08s" }}>
               <h3 className="text-2xl font-bold text-[#0d315c] mb-6">How to Reach SMRU</h3>
               
-              <div className="space-y-4">
+              <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 {/* From Airport */}
-                <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
+                <div className="bg-white border border-gray-200 rounded-lg p-4 sm:p-5 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 flex items-center justify-center">
-                      <span className="text-2xl">✈️</span>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center">
+                      <span className="text-xl sm:text-2xl">✈️</span>
                     </div>
-                    <h4 className="text-lg font-semibold text-[#0d315c]">From Airport</h4>
+                    <h4 className="text-base sm:text-lg font-semibold text-[#0d315c]">From Airport</h4>
                   </div>
-                  <p className="text-sm text-gray-700 mb-3">
+                  <p className="text-xs sm:text-sm text-gray-700 mb-3">
                     <strong>Rajiv Gandhi International Airport (HYD)</strong><br/>
                     Distance: ~45 km | Time: 1.5-2 hours
                   </p>
                   <p className="text-xs text-gray-600 mb-3">
                     <strong>Route:</strong> Airport → Outer Ring Road → Yadadri Road → Deshmukhi
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-3">
                     <a
                       href="https://www.uber.com/in/ride/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-black text-white text-xs rounded-lg hover:bg-gray-800 transition font-medium"
+                      className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
                     >
-                      🚗 Uber
+                      Uber
                     </a>
                     <a
                       href="https://www.olacabs.com/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-yellow-500 text-white text-xs rounded-lg hover:bg-yellow-600 transition font-medium"
+                      className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
                     >
-                      🚕 Ola
+                      Ola
                     </a>
                     <a
                       href="https://rapido.bike/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-red-500 text-white text-xs rounded-lg hover:bg-red-600 transition font-medium"
+                      className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
                     >
-                      🏍️ Rapido
+                      Rapido
                     </a>
                   </div>
                 </div>
 
                 {/* From Railway Station */}
-                <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
+                <div className="bg-white border border-gray-200 rounded-lg p-4 sm:p-5 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 flex items-center justify-center">
-                      <span className="text-2xl">🚂</span>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center">
+                      <span className="text-xl sm:text-2xl">🚂</span>
                     </div>
-                    <h4 className="text-lg font-semibold text-[#0d315c]">From Railway Station</h4>
+                    <h4 className="text-base sm:text-lg font-semibold text-[#0d315c]">From Railway Station</h4>
                   </div>
-                  <p className="text-sm text-gray-700 mb-3">
+                  <p className="text-xs sm:text-sm text-gray-700 mb-3">
                     <strong>Secunderabad Railway Station</strong><br/>
                     Distance: ~35 km | Time: 1-1.5 hours
                   </p>
                   <p className="text-xs text-gray-600 mb-3">
                     <strong>Route:</strong> Station → Secunderabad → Outer Ring Road → Yadadri Road → Deshmukhi
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-3">
                     <a
                       href="https://www.uber.com/in/ride/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-black text-white text-xs rounded-lg hover:bg-gray-800 transition font-medium"
+                      className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
                     >
-                      🚗 Uber
+                      Uber
                     </a>
                     <a
                       href="https://www.olacabs.com/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-yellow-500 text-white text-xs rounded-lg hover:bg-yellow-600 transition font-medium"
+                      className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
                     >
-                      🚕 Ola
+                      Ola
                     </a>
                     <a
                       href="https://rapido.bike/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-red-500 text-white text-xs rounded-lg hover:bg-red-600 transition font-medium"
+                      className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
                     >
-                      🏍️ Rapido
+                      Rapido
                     </a>
                   </div>
                 </div>
 
                 {/* From Metro */}
-                <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
+                <div className="bg-white border border-gray-200 rounded-lg p-4 sm:p-5 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 flex items-center justify-center">
-                      <span className="text-2xl">🚇</span>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center">
+                      <span className="text-xl sm:text-2xl">🚇</span>
                     </div>
-                    <h4 className="text-lg font-semibold text-[#0d315c]">From Metro</h4>
+                    <h4 className="text-base sm:text-lg font-semibold text-[#0d315c]">From Metro</h4>
                   </div>
-                  <p className="text-sm text-gray-700 mb-3">
+                  <p className="text-xs sm:text-sm text-gray-700 mb-3">
                     <strong>Nearest Metro Station: Miyapur</strong><br/>
                     Distance: ~25 km | Time: 45-60 minutes
                   </p>
                   <p className="text-xs text-gray-600 mb-3">
                     <strong>Route:</strong> Miyapur Metro → NH44 → Yadadri Road → Deshmukhi
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-3">
                     <a
                       href="https://www.uber.com/in/ride/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-black text-white text-xs rounded-lg hover:bg-gray-800 transition font-medium"
+                      className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
                     >
-                      🚗 Uber
+                      Uber
                     </a>
                     <a
                       href="https://www.olacabs.com/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-yellow-500 text-white text-xs rounded-lg hover:bg-yellow-600 transition font-medium"
+                      className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
                     >
-                      🚕 Ola
+                      Ola
                     </a>
                     <a
                       href="https://rapido.bike/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-red-500 text-white text-xs rounded-lg hover:bg-red-600 transition font-medium"
+                      className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
                     >
-                      🏍️ Rapido
+                      Rapido
                     </a>
                   </div>
                 </div>
 
                 {/* From Bus Stand */}
-                <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
+                <div className="bg-white border border-gray-200 rounded-lg p-4 sm:p-5 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 flex items-center justify-center">
-                      <span className="text-2xl">🚌</span>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center">
+                      <span className="text-xl sm:text-2xl">🚌</span>
                     </div>
-                    <h4 className="text-lg font-semibold text-[#0d315c]">From Bus Stand</h4>
+                    <h4 className="text-base sm:text-lg font-semibold text-[#0d315c]">From Bus Stand</h4>
                   </div>
-                  <p className="text-sm text-gray-700 mb-3">
+                  <p className="text-xs sm:text-sm text-gray-700 mb-3">
                     <strong>MGBS (Mahatma Gandhi Bus Station)</strong><br/>
                     Distance: ~40 km | Time: 1.5-2 hours
                   </p>
                   <p className="text-xs text-gray-600 mb-3">
                     <strong>Route:</strong> MGBS → Secunderabad → Outer Ring Road → Yadadri Road → Deshmukhi
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-3">
                     <a
                       href="https://www.uber.com/in/ride/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-black text-white text-xs rounded-lg hover:bg-gray-800 transition font-medium"
+                      className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
                     >
-                      🚗 Uber
+                      Uber
                     </a>
                     <a
                       href="https://www.olacabs.com/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-yellow-500 text-white text-xs rounded-lg hover:bg-yellow-600 transition font-medium"
+                      className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
                     >
-                      🚕 Ola
+                      Ola
                     </a>
                     <a
                       href="https://rapido.bike/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-red-500 text-white text-xs rounded-lg hover:bg-red-600 transition font-medium"
+                      className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
                     >
-                      🏍️ Rapido
+                      Rapido
                     </a>
                   </div>
                 </div>
