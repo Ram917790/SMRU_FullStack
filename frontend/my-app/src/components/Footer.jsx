@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {
   FaFacebookF,
-  FaTwitter,
   FaInstagram,
   FaLinkedinIn,
+  FaYoutube,
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
@@ -23,14 +23,42 @@ const Footer = () => {
             empowering students to heal, restore, and uplift lives.
           </p>
           <div className="flex justify-center md:justify-start gap-4 mt-4">
-            {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map(
-              (Icon, i) => (
-                <Icon
-                  key={i}
-                  className="text-xl cursor-pointer hover:text-[#019e6e] transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 rounded-sm"
-                />
-              )
-            )}
+            <a
+              href="https://www.youtube.com/@SMRUniversity"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl cursor-pointer hover:text-[#019e6e] transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 rounded-sm"
+              aria-label="YouTube"
+            >
+              <FaYoutube />
+            </a>
+            <a
+              href="https://www.facebook.com/SMRUniversity"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl cursor-pointer hover:text-[#019e6e] transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 rounded-sm"
+              aria-label="Facebook"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://www.instagram.com/stmarysrehab_university"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl cursor-pointer hover:text-[#019e6e] transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 rounded-sm"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/smruhyderabad/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl cursor-pointer hover:text-[#019e6e] transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 rounded-sm"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedinIn />
+            </a>
           </div>
         </div>
 
