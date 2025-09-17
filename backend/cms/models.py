@@ -31,7 +31,12 @@ class Leader(TimeStampedModel):
     name = models.CharField(max_length=140)
     role = models.CharField(max_length=140, blank=True)
     about = models.TextField(blank=True)
-    image_url = models.URLField(blank=True)  # paste a full URL here
+    profile_image = models.ImageField(upload_to='leadership/', blank=True, null=True)
+    email = models.EmailField(blank=True)
+    phone = models.CharField(max_length=20, blank=True)
+    qualifications = models.TextField(blank=True, help_text="Educational qualifications and certifications")
+    experience = models.TextField(blank=True, help_text="Professional experience and achievements")
+    viewProfileEnabled = models.BooleanField(default=True, help_text="Show 'View Profile' button on frontend")
     slug = models.SlugField(max_length=160, blank=True, unique=True)
     order = models.PositiveIntegerField(default=0)
 

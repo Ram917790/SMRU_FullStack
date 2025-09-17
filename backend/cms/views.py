@@ -13,17 +13,22 @@ from .models import (
 
 
 def _leader_to_dict(l: Leader) -> dict:
+    profile_image_url = ""
+    if hasattr(l, "profile_image") and l.profile_image:
+        profile_image_url = l.profile_image.url
+    
     return {
         "slug": getattr(l, "slug", "") or slugify(getattr(l, "name", "")),
         "name": getattr(l, "name", ""),
         "role": getattr(l, "role", ""),
-        "image": (
-            getattr(l, "image_url", None)
-            or getattr(l, "photo_url", None)
-            or ""
-        ),
+        "profile_image": profile_image_url,
         "about": getattr(l, "about", "") or "",
-        "bio": getattr(l, "bio", "") or "",
+        "bio": getattr(l, "about", "") or "",  # Use 'about' field for bio
+        "email": getattr(l, "email", "") or "",
+        "phone": getattr(l, "phone", "") or "",
+        "qualifications": getattr(l, "qualifications", "") or "",
+        "experience": getattr(l, "experience", "") or "",
+        "viewProfileEnabled": getattr(l, "viewProfileEnabled", True),
     }
 
 

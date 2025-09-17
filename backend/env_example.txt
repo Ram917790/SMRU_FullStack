@@ -1,0 +1,12 @@
+# Django Settings
+SECRET_KEY=your-super-secret-key-here
+DEBUG=False
+
+# Database (if using PostgreSQL/MySQL instead of SQLite)
+# DATABASE_URL=postgresql://user:password@localhost:5432/dbname
+
+# Server Settings
+ALLOWED_HOSTS=smru.in,www.smru.in,smru.edu.in,www.smru.edu.in
+
+# CORS Settings
+CORS_ALLOWED_ORIGINS=https://smru.in,https://www.smru.in,https://smru.edu.in,https://www.smru.edu.in

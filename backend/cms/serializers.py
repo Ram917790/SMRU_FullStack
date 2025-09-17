@@ -2,15 +2,18 @@ from rest_framework import serializers
 from . import models
 
 class LeaderSerializer(serializers.ModelSerializer):
+    profile_image = serializers.ImageField(required=False)
+    
     class Meta:
         model = models.Leader
-        fields = ["id","name","title","qualifications","photo_url","order"]
+        fields = ["id", "name", "role", "about", "profile_image", "email", "phone", "qualifications", "experience", "viewProfileEnabled", "slug", "order"]
 
 class LeadershipGroupSerializer(serializers.ModelSerializer):
-    members = LeaderSerializer(many=True, read_only=True)
+    leaders = LeaderSerializer(many=True, read_only=True)
+    
     class Meta:
         model = models.LeadershipGroup
-        fields = ["id","name","description","order","members"]
+        fields = ["id", "name", "description", "order", "leaders"]
 
 class ProgramSerializer(serializers.ModelSerializer):
     class Meta:

@@ -28,7 +28,7 @@ def home(_request):
     )
 
 # SPA fallback view - serves the React app for all non-API routes
-def spa_fallback(request):
+def spa_fallback(request, path=None):
     """
     Fallback view for SPA routes. This serves the React app's index.html
     for any route that doesn't match API endpoints, allowing client-side
@@ -61,11 +61,12 @@ urlpatterns = [
     path("", home, name="home"),                     # ✅ root no longer 404s
     path("admin/", admin.site.urls),
     path("api/", include("cms.urls")),               # your API
-    # Catch-all pattern for SPA routes - must be last
-    path("<path:path>", spa_fallback, name="spa_fallback"),
 ]
 
 # Serve static files during development
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# Catch-all pattern for SPA routes - must be last
+urlpatterns += [path("<path:path>", spa_fallback, name="spa_fallback")]

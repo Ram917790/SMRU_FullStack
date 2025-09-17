@@ -46,20 +46,76 @@ export default function LeaderProfile() {
 
       <main className="py-12 bg-slate-50">
         <div className="container max-w-screen-xl mx-auto px-4 grid lg:grid-cols-3 gap-8">
-          <aside className="lg:col-span-1">
+          <aside className="lg:col-span-1 space-y-6">
+            {/* Profile Image */}
+            <div className="rounded-xl bg-white ring-1 ring-slate-300 p-8 text-center">
+              {leader.profile_image ? (
+                <img
+                  src={leader.profile_image}
+                  alt={`${leader.name} profile`}
+                  className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-slate-200 shadow-lg"
+                />
+              ) : (
+                <div className="w-48 h-48 rounded-full mx-auto border-4 border-slate-200 shadow-lg bg-slate-100 flex items-center justify-center text-6xl font-bold text-slate-600">
+                  {leader.name ? leader.name.split(' ').map(n => n[0]).join('').toUpperCase() : 'L'}
+                </div>
+              )}
+            </div>
+
+            {/* Quick Facts */}
             <div className="rounded-xl bg-white ring-1 ring-slate-300 p-5">
               <h3 className="text-[#0d315c] font-bold">Quick Facts</h3>
               <ul className="mt-3 space-y-2 text-slate-700 text-sm">
                 <li><strong>Role:</strong> {leader.role}</li>
+                {leader.email && <li><strong>Email:</strong> <a href={`mailto:${leader.email}`} className="text-blue-600 hover:text-blue-800">{leader.email}</a></li>}
+                {leader.phone && <li><strong>Phone:</strong> <a href={`tel:${leader.phone}`} className="text-blue-600 hover:text-blue-800">{leader.phone}</a></li>}
               </ul>
             </div>
           </aside>
 
           <div className="lg:col-span-2 space-y-8">
+            {/* Name */}
             <article className="rounded-xl bg-white ring-1 ring-slate-300 p-6 shadow-sm">
-              <h2 className="text-xl font-bold text-[#0d315c]">Profile</h2>
-              <p className="mt-2 text-slate-700 leading-relaxed whitespace-pre-line">{leader.bio || leader.about || "—"}</p>
+              <h2 className="text-3xl font-bold text-[#10bb82]">{leader.name}</h2>
             </article>
+
+            {/* Designation */}
+            <article className="rounded-xl bg-white ring-1 ring-slate-300 p-6 shadow-sm">
+              <h2 className="text-xl font-bold text-[#0d315c]">Designation</h2>
+              <p className="mt-2 text-lg text-slate-700">{leader.role}</p>
+            </article>
+
+            {/* Bio */}
+            {leader.bio && (
+              <article className="rounded-xl bg-white ring-1 ring-slate-300 p-6 shadow-sm">
+                <h2 className="text-xl font-bold text-[#0d315c]">Bio</h2>
+                <p className="mt-2 text-slate-700 leading-relaxed whitespace-pre-line">{leader.bio}</p>
+              </article>
+            )}
+
+            {/* About */}
+            {leader.about && (
+              <article className="rounded-xl bg-white ring-1 ring-slate-300 p-6 shadow-sm">
+                <h2 className="text-xl font-bold text-[#0d315c]">About</h2>
+                <p className="mt-2 text-slate-700 leading-relaxed whitespace-pre-line">{leader.about}</p>
+              </article>
+            )}
+
+            {/* Qualifications */}
+            {leader.qualifications && (
+              <article className="rounded-xl bg-white ring-1 ring-slate-300 p-6 shadow-sm">
+                <h2 className="text-xl font-bold text-[#0d315c]">Qualifications</h2>
+                <p className="mt-2 text-slate-700 leading-relaxed whitespace-pre-line">{leader.qualifications}</p>
+              </article>
+            )}
+
+            {/* Experience */}
+            {leader.experience && (
+              <article className="rounded-xl bg-white ring-1 ring-slate-300 p-6 shadow-sm">
+                <h2 className="text-xl font-bold text-[#0d315c]">Experience</h2>
+                <p className="mt-2 text-slate-700 leading-relaxed whitespace-pre-line">{leader.experience}</p>
+              </article>
+            )}
           </div>
         </div>
       </main>

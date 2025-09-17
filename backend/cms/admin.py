@@ -37,19 +37,20 @@ class LeaderAdmin(BrandAdminMixin, admin.ModelAdmin):
     list_editable = ("order",)
     fieldsets = (
         ("Primary", {"fields": ("name", "role", "group", "slug", "order")}),
-        ("Profile", {"fields": ("about", "bio")}),
-        ("Photo", {"fields": ("image_url",)}),
+        ("Profile", {"fields": ("about", "qualifications", "experience")}),
+        ("Contact", {"fields": ("email", "phone")}),
+        ("Photo", {"fields": ("profile_image",)}),
+        ("Display Options", {"fields": ("viewProfileEnabled",)}),
     )
     save_on_top = True
 
     def thumb(self, obj):
-        url = getattr(obj, "image_url", "") or ""
-        if not url:
-            return "-"
-        return format_html(
-            '<img src="{}" style="height:40px;width:40px;object-fit:cover;border-radius:6px"/>',
-            url,
-        )
+        if obj.profile_image:
+            return format_html(
+                '<img src="{}" style="height:40px;width:40px;object-fit:cover;border-radius:6px"/>',
+                obj.profile_image.url,
+            )
+        return "-"
     thumb.short_description = "Photo"
 
     def is_active_display(self, obj):

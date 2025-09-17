@@ -140,9 +140,16 @@ function LeadershipSection() {
   return (
     <section className="py-12 md:py-20 bg-white" id="leadership">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <header className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Leadership</h2>
-          <p className="mt-3 text-slate-600 max-w-2xl mx-auto">A clear, organized view of the teams steering SMRU.</p>
+        <header className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#0d315c] mb-6">Leadership</h2>
+          <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed mb-8">
+            Meet the visionary leaders and dedicated professionals who guide SMRU's mission of excellence in rehabilitation education.
+          </p>
+          <div className="flex items-center justify-center space-x-2">
+            <div className="h-1 w-12 bg-[#0d315c] rounded-full"></div>
+            <div className="h-1 w-8 bg-[#10bb82] rounded-full"></div>
+            <div className="h-1 w-12 bg-[#ffaf3a] rounded-full"></div>
+          </div>
         </header>
 
         {/* Group selector for large datasets (UI-only) */}
@@ -175,21 +182,43 @@ function LeadershipSection() {
             const visible = Math.max(visibleCounts[groupKey] || DEFAULT_PAGE, 0);
             const sliced = members.slice(0, visible);
             return (
-              <section key={g.group || gi} className="rounded-2xl bg-white ring-1 ring-slate-200 shadow-sm p-5" aria-labelledby={groupId}>
-                <span className={`inline-flex items-center rounded-full text-xs font-medium px-3 py-1 ring-1 ${palette.pill}`}>Group</span>
-                <h3 id={groupId} className="mt-3 text-lg font-semibold text-slate-900 break-words">{g.group}</h3>
+               <section key={g.group || gi} className="rounded-2xl bg-white ring-1 ring-slate-200 shadow-sm p-5" aria-labelledby={groupId}>
+                 <div className="text-center mb-6">
+                   <h3 id={groupId} className="text-2xl font-bold text-[#0d315c] break-words">{g.group}</h3>
+                   <div className="w-16 h-1 bg-[#10bb82] rounded-full mx-auto mt-3"></div>
+                 </div>
                 <div className="mt-4 space-y-4">
                   {sliced.length ? sliced.map((m, mi) => {
                     const nameId = `leader-${gi}-${mi}`;
                     const bio = m?.bio || m?.about || m?.summary || "";
-                    const canView = m?.viewProfileEnabled === true || Boolean(m?.viewProfileUrl) || Boolean(m?.profileId || m?.slug);
+                    const canView = m?.viewProfileEnabled === true && (Boolean(m?.viewProfileUrl) || Boolean(m?.profileId || m?.slug));
                     const hasExternal = Boolean(m?.viewProfileUrl);
                     const hasRoute = Boolean(m?.slug);
+                    
                     return (
                       <article key={m?.slug || `${gi}-${mi}`} className={`rounded-xl ring-1 p-4 shadow-xs transition hover:-translate-y-0.5 hover:shadow-md focus-within:ring-2 focus-within:ring-primary ${palette.card} break-words`} aria-labelledby={nameId}>
-                        <h4 id={nameId} className="text-sm md:text-base font-semibold text-slate-900">{m.name}</h4>
-                        <p className="mt-1 text-xs md:text-sm text-slate-600"><span className="text-slate-500">Designation: </span>{m.role}</p>
+                        {/* Profile Image */}
+                        <div className="flex items-center gap-3 mb-3">
+                          {m.profile_image ? (
+                            <img
+                              src={m.profile_image}
+                              alt={`${m.name} profile`}
+                              className="w-12 h-12 rounded-full object-cover border-2 border-slate-200 shadow-sm"
+                            />
+                          ) : (
+                            <div className="w-12 h-12 rounded-full border-2 border-slate-200 shadow-sm bg-slate-100 flex items-center justify-center text-sm font-bold text-slate-600">
+                              {m.name ? m.name.split(' ').map(n => n[0]).join('').toUpperCase() : 'L'}
+                            </div>
+                          )}
+                          <div className="flex-1">
+                            <h4 id={nameId} className="text-sm md:text-base font-semibold text-slate-900">{m.name}</h4>
+                          </div>
+                        </div>
+                         <div className="mt-2 inline-flex items-center px-3 py-1 rounded-full bg-[#10bb82] text-white text-xs font-semibold">
+                           {m.role}
+                         </div>
                         {bio && <p className="mt-2 text-xs md:text-sm text-slate-700 line-clamp-4 md:line-clamp-5">{bio}</p>}
+                        
                         {canView && (hasExternal || hasRoute) && (
                           <div className="mt-3">
                             {hasExternal ? (
