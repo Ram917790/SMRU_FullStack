@@ -197,22 +197,9 @@ function LeadershipSection() {
                     
                     return (
                       <article key={m?.slug || `${gi}-${mi}`} className={`rounded-xl ring-1 p-4 shadow-xs transition hover:-translate-y-0.5 hover:shadow-md focus-within:ring-2 focus-within:ring-primary ${palette.card} break-words`} aria-labelledby={nameId}>
-                        {/* Profile Image */}
-                        <div className="flex items-center gap-3 mb-3">
-                          {m.profile_image ? (
-                            <img
-                              src={m.profile_image}
-                              alt={`${m.name} profile`}
-                              className="w-12 h-12 rounded-full object-cover border-2 border-slate-200 shadow-sm"
-                            />
-                          ) : (
-                            <div className="w-12 h-12 rounded-full border-2 border-slate-200 shadow-sm bg-slate-100 flex items-center justify-center text-sm font-bold text-slate-600">
-                              {m.name ? m.name.split(' ').map(n => n[0]).join('').toUpperCase() : 'L'}
-                            </div>
-                          )}
-                          <div className="flex-1">
-                            <h4 id={nameId} className="text-sm md:text-base font-semibold text-slate-900">{m.name}</h4>
-                          </div>
+                        {/* Name Header */}
+                        <div className="mb-3">
+                          <h4 id={nameId} className="text-sm md:text-base font-semibold text-slate-900">{m.name}</h4>
                         </div>
                          <div className="mt-2 inline-flex items-center px-3 py-1 rounded-full bg-[#10bb82] text-white text-xs font-semibold">
                            {m.role}
