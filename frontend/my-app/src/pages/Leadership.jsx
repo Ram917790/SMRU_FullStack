@@ -17,7 +17,7 @@ function LeaderCard({ person, to }) {
       aria-label={`View profile of ${person?.name || "Leader"}`}
     >
       <div className="px-4 pt-5">
-        <div className="aspect-[4/5] overflow-hidden bg-slate-100 ring-1 ring-slate-200 rounded-t-2xl rounded-b-xl">
+        <div className="aspect-[3/4] overflow-hidden bg-slate-100 ring-1 ring-slate-200 rounded-t-2xl rounded-b-xl">
           <img
             src={person.image || placeHolder}
             alt={`${person.name || "Profile"} – ${person.role || "Leader"}`}
@@ -156,7 +156,7 @@ export default function Leadership() {
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {Array.from({ length: 6 }).map((_, i) => (
                 <div key={i} className="rounded-xl ring-1 ring-slate-300 shadow-sm p-4">
-                  <div className="aspect-[4/5] rounded-xl bg-slate-100 animate-pulse" />
+                  <div className="aspect-[3/4] rounded-xl bg-slate-100 animate-pulse" />
                   <div className="mt-4 h-4 w-1/2 bg-slate-100 rounded animate-pulse" />
                   <div className="mt-2 h-3 w-1/3 bg-slate-100 rounded animate-pulse" />
                 </div>
