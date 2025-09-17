@@ -373,7 +373,7 @@ const Contact = () => {
                     <strong>Route:</strong> MGBS → LB Nagar Bus Stop → 555 Bus ~ bata singaram stop 
                   </p>
                   <p className="text-xs text-gray-600 mb-3">
-                    <strong>Route:</strong> JBS (Jubilee Bus Station) → LB Nagar Bus Stop → 555 Bus ~ bata singaram stop 
+                    <strong>Route:</strong> JBS (Jubilee Bus Station) → LB Nagar Bus Stop → 555 Bus ~ bata singaram stop
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-3">
                     <a
