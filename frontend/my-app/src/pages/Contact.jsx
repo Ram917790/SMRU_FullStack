@@ -177,9 +177,10 @@ const Contact = () => {
               <div className="mt-4">
                 <button
                   onClick={openPopup}
-                  className="inline-flex items-center gap-2 rounded-lg px-4 py-2 bg-gradient-to-r from-[#0d315c] to-[#019e6e] text-white font-semibold hover:from-[#0a2a4a] hover:to-[#017a5a] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0d315c]/30"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 bg-gradient-to-r from-[#0d315c] to-[#019e6e] text-white font-semibold hover:from-[#0a2a4a] hover:to-[#017a5a] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0d315c]/30 w-full sm:w-auto"
                 >
-                  <i className="fa-solid fa-bolt"></i> Open Popup Form
+                  <i className="fa-solid fa-bolt text-sm"></i> 
+                  <span className="whitespace-nowrap">Open Popup Form</span>
                 </button>
               </div>
             </div>
@@ -234,14 +235,14 @@ const Contact = () => {
                   </div>
                   <p className="text-xs sm:text-sm text-gray-700 mb-3">
                     <strong>Rajiv Gandhi International Airport (HYD)</strong><br/>
-                    Distance: ~45 km | Time: 1.5-2 hours
+                    Distance: ~45 km | Time: 50 Minutes
                   </p>
                   <p className="text-xs text-gray-600 mb-3">
-                    <strong>Route:</strong> Airport → Outer Ring Road → Yadadri Road → Deshmukhi
+                    <strong>Route:</strong> Airport → ORR Exit-11 → Bata Singaram → Deshmukhi
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-3">
                     <a
-                      href="https://www.uber.com/in/ride/"
+                      href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=St.%20Mary%27s%20Rehabilitation%20University,%20Deshmukhi,%20Yadadri%20Bhongir,%20Telangana%20508284&dropoff[latitude]=17.1234&dropoff[longitude]=78.5678"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
@@ -249,7 +250,7 @@ const Contact = () => {
                       Uber
                     </a>
                     <a
-                      href="https://www.olacabs.com/"
+                      href="https://book.olacabs.com/?pickupLat=17.1234&pickupLng=78.5678&dropLat=17.1234&dropLng=78.5678&pickupAddress=Current%20Location&dropAddress=St.%20Mary%27s%20Rehabilitation%20University,%20Deshmukhi,%20Yadadri%20Bhongir,%20Telangana%20508284"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
@@ -257,7 +258,7 @@ const Contact = () => {
                       Ola
                     </a>
                     <a
-                      href="https://rapido.bike/"
+                      href="https://rapido.bike/?pickupLat=17.1234&pickupLng=78.5678&dropLat=17.1234&dropLng=78.5678&pickupAddress=Current%20Location&dropAddress=St.%20Mary%27s%20Rehabilitation%20University,%20Deshmukhi,%20Yadadri%20Bhongir,%20Telangana%20508284"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
@@ -277,14 +278,17 @@ const Contact = () => {
                   </div>
                   <p className="text-xs sm:text-sm text-gray-700 mb-3">
                     <strong>Secunderabad Railway Station</strong><br/>
-                    Distance: ~35 km | Time: 1-1.5 hours
+                    Distance: ~35 km | Time: 55 Minutes
                   </p>
                   <p className="text-xs text-gray-600 mb-3">
-                    <strong>Route:</strong> Station → Secunderabad → Outer Ring Road → Yadadri Road → Deshmukhi
+                    <strong>Route:</strong> Station → Secunderabad Metro → LB Nagar Metro → 555 Bus ~ bata singaram stop
+                  </p>
+                  <p className="text-xs text-gray-600 mb-3">
+                    <strong>Route:</strong> Station → Secunderabad Bus Stop → LB Nagar Bus Stop → 555 Bus ~ bata singaram stop
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-3">
                     <a
-                      href="https://www.uber.com/in/ride/"
+                      href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=St.%20Mary%27s%20Rehabilitation%20University,%20Deshmukhi,%20Yadadri%20Bhongir,%20Telangana%20508284&dropoff[latitude]=17.1234&dropoff[longitude]=78.5678"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
@@ -292,7 +296,7 @@ const Contact = () => {
                       Uber
                     </a>
                     <a
-                      href="https://www.olacabs.com/"
+                      href="https://book.olacabs.com/?pickupLat=17.1234&pickupLng=78.5678&dropLat=17.1234&dropLng=78.5678&pickupAddress=Current%20Location&dropAddress=St.%20Mary%27s%20Rehabilitation%20University,%20Deshmukhi,%20Yadadri%20Bhongir,%20Telangana%20508284"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
@@ -300,7 +304,7 @@ const Contact = () => {
                       Ola
                     </a>
                     <a
-                      href="https://rapido.bike/"
+                      href="https://rapido.bike/?pickupLat=17.1234&pickupLng=78.5678&dropLat=17.1234&dropLng=78.5678&pickupAddress=Current%20Location&dropAddress=St.%20Mary%27s%20Rehabilitation%20University,%20Deshmukhi,%20Yadadri%20Bhongir,%20Telangana%20508284"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
@@ -319,15 +323,15 @@ const Contact = () => {
                     <h4 className="text-base sm:text-lg font-semibold text-[#0d315c]">From Metro</h4>
                   </div>
                   <p className="text-xs sm:text-sm text-gray-700 mb-3">
-                    <strong>Nearest Metro Station: Miyapur</strong><br/>
-                    Distance: ~25 km | Time: 45-60 minutes
+                    <strong>Nearest Metro Station: LB Nagar</strong><br/>
+                    Distance: ~25 km | Time: 35 minutes
                   </p>
                   <p className="text-xs text-gray-600 mb-3">
-                    <strong>Route:</strong> Miyapur Metro → NH44 → Yadadri Road → Deshmukhi
+                    <strong>Route:</strong> LB Nagar Metro → 555 Bus ~ bata singaram stop
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-3">
                     <a
-                      href="https://www.uber.com/in/ride/"
+                      href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=St.%20Mary%27s%20Rehabilitation%20University,%20Deshmukhi,%20Yadadri%20Bhongir,%20Telangana%20508284&dropoff[latitude]=17.1234&dropoff[longitude]=78.5678"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
@@ -335,7 +339,7 @@ const Contact = () => {
                       Uber
                     </a>
                     <a
-                      href="https://www.olacabs.com/"
+                      href="https://book.olacabs.com/?pickupLat=17.1234&pickupLng=78.5678&dropLat=17.1234&dropLng=78.5678&pickupAddress=Current%20Location&dropAddress=St.%20Mary%27s%20Rehabilitation%20University,%20Deshmukhi,%20Yadadri%20Bhongir,%20Telangana%20508284"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
@@ -343,7 +347,7 @@ const Contact = () => {
                       Ola
                     </a>
                     <a
-                      href="https://rapido.bike/"
+                      href="https://rapido.bike/?pickupLat=17.1234&pickupLng=78.5678&dropLat=17.1234&dropLng=78.5678&pickupAddress=Current%20Location&dropAddress=St.%20Mary%27s%20Rehabilitation%20University,%20Deshmukhi,%20Yadadri%20Bhongir,%20Telangana%20508284"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
@@ -363,14 +367,17 @@ const Contact = () => {
                   </div>
                   <p className="text-xs sm:text-sm text-gray-700 mb-3">
                     <strong>MGBS (Mahatma Gandhi Bus Station)</strong><br/>
-                    Distance: ~40 km | Time: 1.5-2 hours
+                    Distance: ~40 km | Time: 45 Minutes
                   </p>
                   <p className="text-xs text-gray-600 mb-3">
-                    <strong>Route:</strong> MGBS → Secunderabad → Outer Ring Road → Yadadri Road → Deshmukhi
+                    <strong>Route:</strong> MGBS → LB Nagar Bus Stop → 555 Bus ~ bata singaram stop 
+                  </p>
+                  <p className="text-xs text-gray-600 mb-3">
+                    <strong>Route:</strong> JBS (Jubilee Bus Station) → LB Nagar Bus Stop → 555 Bus ~ bata singaram stop 
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-3">
                     <a
-                      href="https://www.uber.com/in/ride/"
+                      href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=St.%20Mary%27s%20Rehabilitation%20University,%20Deshmukhi,%20Yadadri%20Bhongir,%20Telangana%20508284&dropoff[latitude]=17.1234&dropoff[longitude]=78.5678"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
@@ -378,7 +385,7 @@ const Contact = () => {
                       Uber
                     </a>
                     <a
-                      href="https://www.olacabs.com/"
+                      href="https://book.olacabs.com/?pickupLat=17.1234&pickupLng=78.5678&dropLat=17.1234&dropLng=78.5678&pickupAddress=Current%20Location&dropAddress=St.%20Mary%27s%20Rehabilitation%20University,%20Deshmukhi,%20Yadadri%20Bhongir,%20Telangana%20508284"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
@@ -386,7 +393,7 @@ const Contact = () => {
                       Ola
                     </a>
                     <a
-                      href="https://rapido.bike/"
+                      href="https://rapido.bike/?pickupLat=17.1234&pickupLng=78.5678&dropLat=17.1234&dropLng=78.5678&pickupAddress=Current%20Location&dropAddress=St.%20Mary%27s%20Rehabilitation%20University,%20Deshmukhi,%20Yadadri%20Bhongir,%20Telangana%20508284"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium shadow-sm"
